@@ -71,3 +71,233 @@ ul li,a{
     height: 600px;
     
 }
+
+/* about sections style */
+.about{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.about-img{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.about-img img{
+    width: 100%;
+}
+.about-container{
+    width: 50%;
+
+}
+
+.about-title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+
+.of-our{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.about-text{
+    color: #FF900E;
+}
+
+.about-container p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+button{
+    background-color: #FF900E;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+/* ---------------------------------------------feature style--------------------------------------------------- */
+.feature-section{
+    padding: 50px 100px;
+    display: flex;
+    gap: 100px;
+}
+.feature-container .feature-card{
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px 0px gray;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+
+.feature-title{
+     border-left: 5px solid #FF900E;
+     padding-left: 10px;
+     margin-bottom: 10px;
+     font-size: 45px;
+}
+
+.feature-img{
+    position: relative;
+}
+.feature-img img{
+   width: 500px;
+   height: 90%;
+}
+.ten-years-badge{
+    position: absolute;
+    bottom: 40px;
+    left: -40px;
+    background-color: #FF900E;
+    padding: 30px 20px;
+    width: 200px;
+    height: 130px;
+    text-align: center;
+    color: white;
+
+}
+
+.ten-years-badge h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+/* ------------------------------------------------------facts section style--------------------------------- */
+.fact-section{
+    padding: 50px 100px;
+    
+}
+.fact-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.fact-container .card{
+    width: 200px;
+    padding: 20px 10px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.fact-title{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fact-description{
+    font-size: 16px;
+}
+.fact-count{
+    font-size: 45px;
+}
+.fact-text{
+    font-size: 20px;
+    color: #727272;
+}
+
+
+/*------------------------------------------------sponspor section style------------------------------------- */
+.sponspor-section{
+    text-align: center;
+    padding: 50px 100px;
+}
+.sponspor-description{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.sponspor{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #FFF4E7;
+    text-align: center;
+    padding: 20px;
+    margin: 50px 100px;
+}
+
+/* --------------------------------------------responsive mobile device----------------------------------- */
+@media screen and (max-width:576px){
+    nav, ul,.fact-container,.feature-section{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    ul li{
+        margin: 0 auto;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .about{
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+    }
+    .about-container{
+        text-align: center;
+    }
+    
+   .about-title{
+      font-size: 28px;
+   }
+   .of-our{
+    font-size: 28px;
+   }
+    .banner-container,.about-img,.about-container,.sponspor-description{
+        width: 100%;
+    }
+    
+    .banner-img{
+        padding: 10px;
+    }
+    .banner-img img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .banner-title,.feature-title{
+        font-size: 2rem;
+    }
+
+   .fact-section,.sponspor-section{
+      padding: 10px;
+      text-align: center;
+   }
+
+   .sponspor{
+    flex-direction: column;
+    gap: 40px;
+   }
+
+
+   .feature-img img{
+    width: 100%;
+    height: 100%;
+
+   }
+
+   .ten-years-badge{
+    width: 280px;
+    position: static;
+   }
+   footer{
+    margin: 0;
+   }
+}
